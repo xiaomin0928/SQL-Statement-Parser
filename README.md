@@ -1,8 +1,13 @@
-# pc_parser
+# SQL statement Parser (only for Select statement) by Scala
 
 ## Purpose
-The aim in this project is to build a SQL parser and map the element into the expected AST
-data structure.
+The aim in this project is to build a SQL parser and map the element into the expected AST data structure.
+
+## Structure
+- scala  #parser component
+  - ir   #data structure to store parse rresult, you can find more details in Overview
+- test   #test component
+  
 
 ## Developed Scala Parser Combinator
 - [] frame-spec
@@ -23,12 +28,8 @@ data structure.
 - [x] expr
 - [x] select-stmt
 
-## TODO
-- [ ] map the sqlParser result into IR structure
-- [ ] add test case
 
 ## How to run
-1. sql_parser_template :
-   click run on sqlParserTemplate object, If run success, it will print the exact input you gave in console
-
-
+SQLParserTest :
+   click run on SQLParserTest, it parses the test cases in the TetsCase.
+   if you want to test more cases, add new case in the TetsCase, and wirte test code as template.
