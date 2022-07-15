@@ -31,5 +31,5 @@ The aim in this project is to build a SQL parser and map the element into the ex
 
 ## How to run
 SQLParserTest :
-   click run on SQLParserTest, it parses the test cases in the TetsCase.
-   if you want to test more cases, add new case in the TetsCase, and wirte test code as template.
+   * click run on SQLParserTest, it parses the test cases in the TetsCase.
+   * if you want to test more cases, add new case in the TetsCase, and wirte test code as template.
