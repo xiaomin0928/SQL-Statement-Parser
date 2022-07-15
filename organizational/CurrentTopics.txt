@@ -1,0 +1,7 @@
+1. Merge Alex´s DataStructure with Xiaomin´s Parser - Solved
+2. Running Demo for simple SQL-Statements with new Merged (Topic 1.) Parser - Solved
+3. Implement Case sensitive/insensitive for (i.e select) Statements  - Solved
+4. Inherit datastructur (extend it) -> By alex till 15.12.21 evening
+5. Implement demo for extended structure.
+6. added sql combinator parser template (sql_parser_template.scala) with keywords.scala which contains all the reserved words in SQL
+   please go check the readme.md for more information

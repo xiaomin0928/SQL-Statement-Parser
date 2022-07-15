@@ -1,0 +1,17 @@
+select * where id=1000
+
+val sql_exp1="select car/make WHERE car/power >= 200" 
+val sql_exp2="select car/make WHERE ++Audi >= 200" 
+val sql_exp3="select ALL car/color WHERE ++car/power >= 200" 
+val sql_exp4="select DISTINCT car/color WHERE ++car/weight >= 200" 
+val sql_exp5="select DISTINCT car/color WHERE ++car/weight >= 200 GROUP BY car/make" 
+val sql_exp6="select car/zylinder WHERE car/length >= 200, car/make = audi <  , --car/power = 150" 
+val sql_exp7="select car/zylinder WHERE SUM(car/length, car/weight) >= 125" 
+val sql_exp8="select car/zylinder WHERE (car/seats == 12 , car/doors > 22)" 
+val sql_exp9="select car/zylinder AS Zylinder WHERE (car/seats == 12 , car/doors > 22)" 
+val sql_exp10="select car/color WHERE car/make NOT LIKE audi" 
+val sql_exp11="select car/make WHERE car/weight NOT BETWEEN 300 AND 750" 
+val sql_exp12="select car/make WHERE car/weight NOT BETWEEN 300 AND 750 ORDER BY car/power ASC NULLS FIRST" 
+val sql_exp13="select * WHERE car/make = Ford"
+val sql_exp14="select car/color WHERE car/power >= 200 GROUP BY car/seats"
+val sql_exp15="select car/color WHERE car/power >= 200 GROUP BY car/seats LIMIT 500"

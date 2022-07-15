@@ -1,0 +1,57 @@
+//*************************************************************************************************
+//
+// Open topics:
+// - CompoundOperator on the wrong position in the tree path, must be above SelectStatement.
+// - How to handle negations in classes? For example as in LikeExpression, BetweenExpression, ...
+// 
+//*************************************************************************************************
+//
+//      IR
+//      | SelectStatement
+//      | Projection
+//      | Selection
+//      | GroupBy
+//      | OrderBy
+//      | Limit
+//      | Expression
+//      -----| LiteralValueExpression
+//      ----------| NumericLiteral
+//      ----------| StringLiteral
+//      ----------| BlobLiteral
+//      ----------| BooleanLiteral
+//      ----------| NullLiteral
+//      ----------| TimeLiteral
+//      ----------| DateLiteral
+//      ----------| TimestampLiteral
+//      -----| ColumnExpression
+//      -----| UnaryOperatorExpression
+//      -----| BinaryOperatorExpression
+//      -----| Function
+//      ----------| ExpressionFunction
+//      ----------| AsteriskFunction
+//      ----------| EmptyFunction
+//      -----| Expressions
+//      -----| CastExpression
+//      -----| CollateExpression
+//      -----| LikeExpression
+//      -----| GlobExpression
+//      -----| RegexpExpression
+//      -----| MatchExpression
+//      -----| NullExpression
+//      -----| IsExpression
+//      -----| BetweenExpression
+//      -----| InExpression
+//      -----| SelectExpression
+//      -----| CaseExpression
+//      -----| RaiseFunction
+//      | TypeName
+//      | SignedNumber
+//      | OrderingTerm
+//      | CompoundOperator
+//      | (Window)
+//      | (WindowDefinition)
+//      | (Frame)
+//      | (FrameBetween)
+//      | (OverClause)
+//
+//*************************************************************************************************

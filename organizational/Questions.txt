@@ -1,0 +1,22 @@
+Common: 
+	1. Would it be helpfull to implement a function like "datastructure" similar to "toString" which prints out the Datastructure and whats saved into it? 
+
+For Dennis:
+	1. Do we need to return a whole string like " select: Objecttype/Attribute" 
+		or is it sufficient to return the Data Structure where everything is saved. 
+		-> Both save in datastructure and implement a "to.string" function which outputs the saved information into string ( override toString() = ... ) 
+		
+	2. How can we distinguish several sql statements in one call? Will there only 
+		be one Statement per call or is it possible that there will be for example
+		two statements in one call? If the latter, how will the be seperated by 
+		one another? 
+		-> Only One, but it can be happen that we have a UNION etc. 
+		-> All in one line (white space doen´t matter at all in parser combinator) 
+		-> semicolon at the end is optional. (not to be saved in the representation) 
+		-> Check for E of String by 
+		def EOI: Parser[Any] = new Parser[Any] {
+			def apply(in: Input) = {
+			if (in.atEnd) new Success("EOI", in)
+			else Failure("end of input expected", in)
+			}
+		}
